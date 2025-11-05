@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.7;
+  color: #2c2c2c;
+  background: linear-gradient(to bottom, #f8f5f0 0%, #e8e0d5 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #8b2e00 0%, #c74a00 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+.hero .subtitle {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+.hero .intro {
+  font-size: 1.15em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #8b2e00;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 3px solid #c74a00;
+  padding-bottom: 15px;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.comparison-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.comparison-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.comparison-card.modern {
+  border-left: 6px solid #dc143c;
+}
+
+.comparison-card.authentic {
+  border-left: 6px solid #1e5f1e;
+}
+
+.comparison-card h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+}
+
+.comparison-card .tag {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tag.modern-tag {
+  background: #ffe6e6;
+  color: #dc143c;
+}
+
+.tag.authentic-tag {
+  background: #e6f4e6;
+  color: #1e5f1e;
+}
+
+.comparison-card p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.story-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #c74a00;
+}
+
+.story-card h3 {
+  font-size: 1.6em;
+  color: #8b2e00;
+  margin-bottom: 15px;
+}
+
+.story-card p {
+  font-size: 1.05em;
+  color: #555;
+  line-height: 1.8;
+}
+
+.virtues-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.virtue-item {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #1e5f1e;
+}
+
+.virtue-item h3 {
+  font-size: 1.4em;
+  color: #1e5f1e;
+  margin-bottom: 10px;
+}
+
+.virtue-item p {
+  font-size: 1em;
+  color: #666;
+}
+
+.quote-box {
+  background: linear-gradient(135deg, #1e5f1e 0%, #2d8a2d 100%);
+  color: white;
+  padding: 50px 40px;
+  margin: 60px 0;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.quote-box blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.quote-box cite {
+  font-size: 1.1em;
+  font-style: normal;
+  opacity: 0.9;
+}
+
+.legacy-section {
+  background: white;
+  padding: 60px 40px;
+  margin: 40px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.legacy-section h2 {
+  font-size: 2.2em;
+  color: #8b2e00;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.legacy-section p {
+  font-size: 1.15em;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto 20px;
+  line-height: 1.9;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #8b2e00 0%, #c74a00 100%);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 60px 0 40px;
+}
+
+.cta-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.3em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+  font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2em;
+  }
+
+  .hero .subtitle {
+    font-size: 1.2em;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .section-title {
+    font-size: 2em;
+  }
+
+  .quote-box blockquote {
+    font-size: 1.2em;
+  }
+}
